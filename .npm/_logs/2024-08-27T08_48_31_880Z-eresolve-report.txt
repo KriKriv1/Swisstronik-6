@@ -1,0 +1,24 @@
+'Log files:
+/home/krikri/.npm/_logs/2024-08-27T08_48_31_880Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: hardhat-project@undefined
+Found: @nomicfoundation/hardhat-verify@1.1.1
+node_modules/@nomicfoundation/hardhat-verify
+  peer @nomicfoundation/hardhat-verify@"^1.0.0" from @nomicfoundation/hardhat-toolbox@3.0.0
+  node_modules/@nomicfoundation/hardhat-toolbox
+    dev @nomicfoundation/hardhat-toolbox@"^3.0.0" from the root project
+
+Could not resolve dependency:
+@openzeppelin/hardhat-upgrades@"*" from the root project
+
+Conflicting peer dependency: @nomicfoundation/hardhat-verify@2.0.9
+node_modules/@nomicfoundation/hardhat-verify
+  peerOptional @nomicfoundation/hardhat-verify@"^2.0.0" from @openzeppelin/hardhat-upgrades@3.2.1
+  node_modules/@openzeppelin/hardhat-upgrades
+    @openzeppelin/hardhat-upgrades@"*" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
