@@ -4,19 +4,19 @@
 3 silly config load:file:/home/krikri/.nvm/versions/node/v20.16.0/lib/node_modules/npm/npmrc
 4 silly config load:file:/home/krikri/.npmrc
 5 silly config load:file:/home/krikri/.nvm/versions/node/v20.16.0/etc/npmrc
-6 verbose title npm install @swisstronik/utils
-7 verbose argv "install" "@swisstronik/utils"
-8 verbose logfile logs-max:10 dir:/home/krikri/.npm/_logs/2024-08-27T08_57_53_548Z-
-9 verbose logfile /home/krikri/.npm/_logs/2024-08-27T08_57_53_548Z-debug-0.log
+6 verbose title npm install dotenv
+7 verbose argv "install" "dotenv"
+8 verbose logfile logs-max:10 dir:/home/krikri/.npm/_logs/2024-08-27T14_44_00_832Z-
+9 verbose logfile /home/krikri/.npm/_logs/2024-08-27T14_44_00_832Z-debug-0.log
 10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
 13 silly idealTree buildDeps
-14 silly fetch manifest @swisstronik/utils@^1.3.0
-15 silly packumentCache full:https://registry.npmjs.org/@swisstronik%2futils cache-miss
-16 http fetch GET 200 https://registry.npmjs.org/@swisstronik%2futils 79ms (cache hit)
-17 silly packumentCache full:https://registry.npmjs.org/@swisstronik%2futils set size:36572 disposed:false
-18 silly placeDep ROOT @swisstronik/utils@1.3.0 REPLACE for:  want: ^1.3.0
+14 silly fetch manifest dotenv@^16.4.5
+15 silly packumentCache full:https://registry.npmjs.org/dotenv cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/dotenv 175ms (cache revalidated)
+17 silly packumentCache full:https://registry.npmjs.org/dotenv set size:296969 disposed:false
+18 silly placeDep ROOT dotenv@16.4.5 REPLACE for:  want: ^16.4.5
 19 silly reify moves {}
 20 silly audit bulk request {
 20 silly audit   '@adraffy/ens-normalize': [ '1.10.1' ],
@@ -144,6 +144,7 @@
 20 silly audit   '@sentry/utils': [ '5.30.0' ],
 20 silly audit   '@smithy/types': [ '3.3.0' ],
 20 silly audit   '@solidity-parser/parser': [ '0.14.5', '0.18.0' ],
+20 silly audit   '@swisstronik/utils': [ '1.3.0' ],
 20 silly audit   ethers: [ '5.7.2', '6.13.2' ],
 20 silly audit   '@tsconfig/node10': [ '1.0.11' ],
 20 silly audit   '@tsconfig/node12': [ '1.0.11' ],
@@ -268,7 +269,6 @@
 20 silly audit   diff: [ '5.2.0', '4.0.2' ],
 20 silly audit   difflib: [ '0.2.4' ],
 20 silly audit   'dir-glob': [ '3.0.1' ],
-20 silly audit   dotenv: [ '16.4.5' ],
 20 silly audit   elliptic: [ '6.5.4' ],
 20 silly audit   'emoji-regex': [ '8.0.0' ],
 20 silly audit   enquirer: [ '2.4.1' ],
@@ -565,11 +565,11 @@
 20 silly audit   'yargs-unparser': [ '2.0.0' ],
 20 silly audit   yn: [ '3.1.1' ],
 20 silly audit   'yocto-queue': [ '0.1.0' ],
-20 silly audit   '@swisstronik/utils': [ '1.3.0' ]
+20 silly audit   dotenv: [ '16.4.5' ]
 20 silly audit }
 21 verbose reify failed optional dependency /home/krikri/node_modules/fsevents
 22 silly reify mark deleted [ '/home/krikri/node_modules/fsevents' ]
-23 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 322ms
+23 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 173ms
 24 silly audit report {
 24 silly audit report   ws: [
 24 silly audit report     {
@@ -614,21 +614,21 @@
 24 silly audit report }
 25 silly packumentCache corgi:https://registry.npmjs.org/ws cache-miss
 26 silly packumentCache corgi:https://registry.npmjs.org/elliptic cache-miss
-27 http fetch GET 200 https://registry.npmjs.org/ws 5ms (cache hit)
-28 silly packumentCache corgi:https://registry.npmjs.org/ws set size:190597 disposed:false
-29 http fetch GET 200 https://registry.npmjs.org/elliptic 7ms (cache hit)
-30 silly packumentCache corgi:https://registry.npmjs.org/elliptic set size:64999 disposed:false
+27 http fetch GET 200 https://registry.npmjs.org/elliptic 5ms (cache hit)
+28 silly packumentCache corgi:https://registry.npmjs.org/elliptic set size:64999 disposed:false
+29 http fetch GET 200 https://registry.npmjs.org/ws 6ms (cache hit)
+30 silly packumentCache corgi:https://registry.npmjs.org/ws set size:190597 disposed:false
 31 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fproviders cache-miss
 32 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fproviders 2ms (cache hit)
 33 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fproviders set size:248939 disposed:false
 34 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fsigning-key cache-miss
 35 silly packumentCache corgi:https://registry.npmjs.org/ethereumjs-util cache-miss
 36 silly packumentCache corgi:https://registry.npmjs.org/secp256k1 cache-miss
-37 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fsigning-key 4ms (cache hit)
+37 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fsigning-key 8ms (cache hit)
 38 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fsigning-key set size:73186 disposed:false
-39 http fetch GET 200 https://registry.npmjs.org/ethereumjs-util 5ms (cache hit)
+39 http fetch GET 200 https://registry.npmjs.org/ethereumjs-util 8ms (cache hit)
 40 silly packumentCache corgi:https://registry.npmjs.org/ethereumjs-util set size:95236 disposed:false
-41 http fetch GET 200 https://registry.npmjs.org/secp256k1 5ms (cache hit)
+41 http fetch GET 200 https://registry.npmjs.org/secp256k1 9ms (cache hit)
 42 silly packumentCache corgi:https://registry.npmjs.org/secp256k1 set size:62615 disposed:false
 43 silly packumentCache corgi:https://registry.npmjs.org/ethers cache-miss
 44 http fetch GET 200 https://registry.npmjs.org/ethers 3ms (cache hit)
@@ -636,50 +636,50 @@
 46 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fhdnode cache-miss
 47 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2ftransactions cache-miss
 48 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fwallet cache-miss
-49 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fhdnode 9ms (cache hit)
-50 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fhdnode set size:88518 disposed:false
-51 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fwallet 8ms (cache hit)
-52 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fwallet set size:112557 disposed:false
-53 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2ftransactions 9ms (cache hit)
-54 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2ftransactions set size:84280 disposed:false
-55 silly packumentCache corgi:https://registry.npmjs.org/eth-gas-reporter cache-miss
-56 silly packumentCache corgi:https://registry.npmjs.org/@swisstronik%2futils cache-miss
-57 http fetch GET 200 https://registry.npmjs.org/@swisstronik%2futils 2ms (cache hit)
+49 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2ftransactions 8ms (cache hit)
+50 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2ftransactions set size:84280 disposed:false
+51 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fhdnode 9ms (cache hit)
+52 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fhdnode set size:88518 disposed:false
+53 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fwallet 9ms (cache hit)
+54 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fwallet set size:112557 disposed:false
+55 silly packumentCache corgi:https://registry.npmjs.org/@swisstronik%2futils cache-miss
+56 silly packumentCache corgi:https://registry.npmjs.org/eth-gas-reporter cache-miss
+57 http fetch GET 200 https://registry.npmjs.org/@swisstronik%2futils 3ms (cache hit)
 58 silly packumentCache corgi:https://registry.npmjs.org/@swisstronik%2futils set size:15473 disposed:false
 59 http fetch GET 200 https://registry.npmjs.org/eth-gas-reporter 3ms (cache hit)
 60 silly packumentCache corgi:https://registry.npmjs.org/eth-gas-reporter set size:110101 disposed:false
-61 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fjson-wallets cache-miss
-62 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fjson-wallets 5ms (cache hit)
-63 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fjson-wallets set size:83133 disposed:false
-64 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fabstract-provider cache-miss
-65 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fcontracts cache-miss
-66 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fabstract-provider 6ms (cache hit)
+61 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fabstract-provider cache-miss
+62 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fcontracts cache-miss
+63 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fjson-wallets cache-miss
+64 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fcontracts 7ms (cache hit)
+65 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fcontracts set size:120426 disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fabstract-provider 8ms (cache hit)
 67 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fabstract-provider set size:85713 disposed:false
-68 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fcontracts 5ms (cache hit)
-69 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fcontracts set size:120426 disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fjson-wallets 8ms (cache hit)
+69 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fjson-wallets set size:83133 disposed:false
 70 silly packumentCache corgi:https://registry.npmjs.org/hardhat-gas-reporter cache-miss
 71 http fetch GET 200 https://registry.npmjs.org/hardhat-gas-reporter 2ms (cache hit)
 72 silly packumentCache corgi:https://registry.npmjs.org/hardhat-gas-reporter set size:66215 disposed:false
 73 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fabstract-signer cache-miss
-74 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fabstract-signer 5ms (cache hit)
+74 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fabstract-signer 3ms (cache hit)
 75 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fabstract-signer set size:91647 disposed:false
 76 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fhash cache-miss
-77 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fhash 5ms (cache hit)
+77 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fhash 4ms (cache hit)
 78 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fhash set size:80837 disposed:false
 79 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fabi cache-miss
 80 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fwordlists cache-miss
-81 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fabi 7ms (cache hit)
+81 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fabi 8ms (cache hit)
 82 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fabi set size:135291 disposed:false
-83 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fwordlists 6ms (cache hit)
+83 http fetch GET 200 https://registry.npmjs.org/@ethersproject%2fwordlists 8ms (cache hit)
 84 silly packumentCache corgi:https://registry.npmjs.org/@ethersproject%2fwordlists set size:72894 disposed:false
 85 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-verify cache-miss
 86 silly packumentCache corgi:https://registry.npmjs.org/hardhat cache-miss
 87 silly packumentCache corgi:https://registry.npmjs.org/solidity-coverage cache-miss
-88 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-verify 5ms (cache hit)
+88 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-verify 6ms (cache hit)
 89 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-verify set size:28943 disposed:false
 90 http fetch GET 200 https://registry.npmjs.org/solidity-coverage 5ms (cache hit)
 91 silly packumentCache corgi:https://registry.npmjs.org/solidity-coverage set size:216097 disposed:false
-92 http fetch GET 200 https://registry.npmjs.org/hardhat 8ms (cache hit)
+92 http fetch GET 200 https://registry.npmjs.org/hardhat 7ms (cache hit)
 93 silly packumentCache corgi:https://registry.npmjs.org/hardhat set size:515487 disposed:false
 94 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-ignition cache-miss
 95 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-toolbox cache-miss
@@ -695,15 +695,15 @@
 105 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-ignition-ethers cache-miss
 106 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-network-helpers cache-miss
 107 silly packumentCache corgi:https://registry.npmjs.org/@typechain%2fhardhat cache-miss
-108 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-ethers 17ms (cache hit)
-109 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-ethers set size:10644 disposed:false
-110 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-chai-matchers 18ms (cache hit)
+108 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-ignition-ethers 18ms (cache hit)
+109 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-ignition-ethers set size:9513 disposed:false
+110 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-chai-matchers 19ms (cache hit)
 111 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-chai-matchers set size:45949 disposed:false
-112 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-ignition-ethers 17ms (cache hit)
-113 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-ignition-ethers set size:9513 disposed:false
-114 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-network-helpers 18ms (cache hit)
+112 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-ethers 19ms (cache hit)
+113 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-ethers set size:10644 disposed:false
+114 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation%2fhardhat-network-helpers 19ms (cache hit)
 115 silly packumentCache corgi:https://registry.npmjs.org/@nomicfoundation%2fhardhat-network-helpers set size:35785 disposed:false
-116 http fetch GET 200 https://registry.npmjs.org/@typechain%2fhardhat 17ms (cache hit)
+116 http fetch GET 200 https://registry.npmjs.org/@typechain%2fhardhat 18ms (cache hit)
 117 silly packumentCache corgi:https://registry.npmjs.org/@typechain%2fhardhat set size:48306 disposed:false
 118 silly ADD
 119 verbose cwd /home/krikri

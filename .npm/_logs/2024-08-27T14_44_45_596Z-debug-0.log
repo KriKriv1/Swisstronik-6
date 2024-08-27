@@ -6,8 +6,8 @@
 5 silly config load:file:/home/krikri/.nvm/versions/node/v20.16.0/etc/npmrc
 6 verbose title npm exec hardhat run scripts/deploy.js --network swisstronik
 7 verbose argv "exec" "--" "hardhat" "run" "scripts/deploy.js" "--network" "swisstronik"
-8 verbose logfile logs-max:10 dir:/home/krikri/.npm/_logs/2024-08-27T08_58_05_201Z-
-9 verbose logfile /home/krikri/.npm/_logs/2024-08-27T08_58_05_201Z-debug-0.log
+8 verbose logfile logs-max:10 dir:/home/krikri/.npm/_logs/2024-08-27T14_44_45_596Z-
+9 verbose logfile /home/krikri/.npm/_logs/2024-08-27T14_44_45_596Z-debug-0.log
 10 silly logfile start cleaning logs, removing 1 files
 11 silly logfile done cleaning log files
 12 verbose cwd /home/krikri
